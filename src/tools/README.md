@@ -1,6 +1,6 @@
 ---
 title: 工具
-icon: laptop-code
+icon: tools
 index: false
 dir:
   order: 2

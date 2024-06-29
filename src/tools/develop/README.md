@@ -1,6 +1,6 @@
 ---
-title: 协作
-icon: user-friends
+title: 开发
+icon: laptop-code
 index: false
 dir:
   order: 1
