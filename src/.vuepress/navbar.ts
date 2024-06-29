@@ -8,19 +8,24 @@ export default navbar([
     prefix: "/",
     children: [
       {
-        text: "前端",
-        icon: "cloud",
-        link: "/frontend/",
+        text: "软件开发",
+        icon: "code",
+        link: "/software/",
       },
       {
-        text: "后端",
-        icon: "server",
-        link: "/backend/",
+        text: "硬件",
+        icon: "memory",
+        link: "/hardware/",
       },
       {
-        text: "数据库",
-        icon: "database",
-        link: "/database/",
+        text: "搞机",
+        icon: "mobile-android",
+        link: "/phone/",
+      },
+      {
+        text: "工具",
+        icon: "laptop-code",
+        link: "/tools/",
       },
       {
         text: "全部",

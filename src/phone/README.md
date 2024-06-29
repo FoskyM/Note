@@ -1,5 +1,5 @@
 ---
-title: 手机
+title: 搞机
 icon: mobile-android
 index: false
 dir:
