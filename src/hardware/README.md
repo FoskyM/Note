@@ -3,7 +3,7 @@ title: 硬件
 icon: memory
 index: false
 dir:
-  order: 1
+  order: 2
 ---
 
 <Catalog />
