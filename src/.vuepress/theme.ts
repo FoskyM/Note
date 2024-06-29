@@ -4,18 +4,18 @@ import navbar from "./navbar.js";
 import sidebar from "./sidebar.js";
 
 export default hopeTheme({
-  hostname: "https://vuepress-theme-hope-docs-demo.netlify.app",
+  hostname: "https://note.fosky.top",
 
   author: {
-    name: "Mr.Hope",
-    url: "https://mister-hope.com",
+    name: "FoskyM",
+    url: "https://fosky.top",
   },
 
   iconAssets: "fontawesome-with-brands",
 
-  logo: "https://theme-hope-assets.vuejs.press/logo.svg",
+  logo: "https://cravatar.cn/avatar/1e03f55c71895224f301d1f5520adb50?s=288",
 
-  repo: "vuepress-theme-hope/vuepress-theme-hope",
+  repo: "FoskyM/Note",
 
   docsDir: "src",
 
@@ -26,7 +26,7 @@ export default hopeTheme({
   sidebar,
 
   // 页脚
-  footer: "默认页脚",
+  footer: "是侬勿望",
   displayFooter: true,
 
   // 加密配置
@@ -47,13 +47,13 @@ export default hopeTheme({
   // 在这里配置主题提供的插件
   plugins: {
     // 注意: 仅用于测试! 你必须自行生成并在生产环境中使用自己的评论服务
-    comment: {
-      provider: "Giscus",
-      repo: "vuepress-theme-hope/giscus-discussions",
-      repoId: "R_kgDOG_Pt2A",
-      category: "Announcements",
-      categoryId: "DIC_kwDOG_Pt2M4COD69",
-    },
+    // comment: {
+    //   provider: "Giscus",
+    //   repo: "vuepress-theme-hope/giscus-discussions",
+    //   repoId: "R_kgDOG_Pt2A",
+    //   category: "Announcements",
+    //   categoryId: "DIC_kwDOG_Pt2M4COD69",
+    // },
 
     components: {
       components: ["Badge", "VPCard"],
@@ -120,9 +120,9 @@ export default hopeTheme({
       // },
 
       // 在启用之前安装 reveal.js
-      // revealJs: {
-      //   plugins: ["highlight", "math", "search", "notes", "zoom"],
-      // },
+      revealJs: {
+        plugins: ["highlight", "math", "search", "notes", "zoom"],
+      },
 
       // 在启用之前安装 @vue/repl
       // vuePlayground: true,
