@@ -23,9 +23,9 @@ export default navbar([
         link: "/database/",
       },
       {
-        text: "其他",
+        text: "全部",
         icon: "list",
-        link: "/other/",
+        link: "/guide.html",
       },
     ],
   },
