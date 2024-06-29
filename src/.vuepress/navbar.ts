@@ -2,30 +2,41 @@ import { navbar } from "vuepress-theme-hope";
 
 export default navbar([
   "/",
-  "/portfolio",
-  "/demo/",
   {
-    text: "指南",
-    icon: "lightbulb",
-    prefix: "/guide/",
+    text: "笔记",
+    icon: "book",
+    prefix: "/",
     children: [
       {
-        text: "Bar",
-        icon: "lightbulb",
-        prefix: "bar/",
-        children: ["baz", { text: "...", icon: "ellipsis", link: "" }],
+        text: "前端",
+        icon: "cloud",
+        link: "/frontend/",
       },
       {
-        text: "Foo",
-        icon: "lightbulb",
-        prefix: "foo/",
-        children: ["ray", { text: "...", icon: "ellipsis", link: "" }],
+        text: "后端",
+        icon: "server",
+        link: "/backend/",
+      },
+      {
+        text: "数据库",
+        icon: "database",
+        link: "/database/",
+      },
+      {
+        text: "其他",
+        icon: "list",
+        link: "/other/",
       },
     ],
   },
   {
-    text: "V2 文档",
-    icon: "book",
-    link: "https://theme-hope.vuejs.press/zh/",
+    text: "关于我",
+    icon: "circle-info",
+    link: "https://fosky.top",
   },
+  // {
+  //   text: "友链",
+  //   icon: "link",
+  //   link: "/friend",
+  // },
 ]);

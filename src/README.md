@@ -9,7 +9,7 @@ heroText: 傅四霁的笔记
 tagline: 基于 VuePress 的个人笔记本
 actions:
   - text: 笔记目录 💡
-    link: ./guide/
+    link: ./guide.html
     type: primary
 
   - text: 关于我

@@ -10,7 +10,12 @@ export default defineUserConfig({
   description: "傅四霁的笔记",
 
   theme,
-
+  
+  markdown: {
+    headers: {
+      level: [1,2,3,4]
+    }
+  },
   // 和 PWA 一起启用
   // shouldPrefetch: false,
 });
