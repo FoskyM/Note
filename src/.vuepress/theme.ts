@@ -107,9 +107,12 @@ export default hopeTheme({
       tabs: true,
       tasklist: true,
       vPre: true,
+      footnote: true,
+      hint: true,
+      alert: true,
 
       // 在启用之前安装 chart.js
-      // chart: true,
+      chart: true,
 
       // insert component easily
 
@@ -123,13 +126,13 @@ export default hopeTheme({
       // gfm: true,
 
       // 在启用之前安装 katex
-      // katex: true,
+      katex: true,
 
       // 在启用之前安装 mathjax-full
       // mathjax: true,
 
       // 在启用之前安装 mermaid
-      // mermaid: true,
+      mermaid: true,
 
       // playground: {
       //   presets: ["ts", "vue"],
