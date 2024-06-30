@@ -6,10 +6,119 @@
     <link>https://note.fosky.top/</link>
     <description>傅四霁的笔记</description>
     <language>zh-CN</language>
-    <pubDate>Sun, 30 Jun 2024 04:08:46 GMT</pubDate>
-    <lastBuildDate>Sun, 30 Jun 2024 04:08:46 GMT</lastBuildDate>
+    <pubDate>Sun, 30 Jun 2024 11:19:49 GMT</pubDate>
+    <lastBuildDate>Sun, 30 Jun 2024 11:19:49 GMT</lastBuildDate>
     <generator>@vuepress/plugin-feed</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+    <item>
+      <title>特殊后缀</title>
+      <link>https://note.fosky.top/website/domain/special_tld.html</link>
+      <guid>https://note.fosky.top/website/domain/special_tld.html</guid>
+      <source url="https://note.fosky.top/rss.xml">特殊后缀</source>
+      <description>我的特殊后缀域名 then.cyou .cyou 是 ShortDot SA 通用顶级域。 heyi.si 寓意 何以思 .si 是斯洛文尼亚的顶级域。 kao.lv 谐音 考虑 .lv 是拉脱维亚的顶级域。 查找比价工具 哪煮米 NameBeta</description>
+      <pubDate>Sun, 30 Jun 2024 10:45:46 GMT</pubDate>
+      <content:encoded><![CDATA[<h2>我的特殊后缀域名</h2>
+<h3>then.cyou</h3>
+<p><code>.cyou</code> 是 <code>ShortDot SA</code> 通用顶级域。</p>
+<h3>heyi.si</h3>
+<p>寓意 <code>何以思</code></p>
+<p><code>.si</code> 是斯洛文尼亚的顶级域。</p>
+<h3>kao.lv</h3>
+<p>谐音 <code>考虑</code></p>
+<p><code>.lv</code> 是拉脱维亚的顶级域。</p>
+<h2>查找比价工具</h2>
+<p><a href="https://www.nazhumi.com/" target="_blank" rel="noopener noreferrer">哪煮米</a></p>
+<p><a href="https://namebeta.com/" target="_blank" rel="noopener noreferrer">NameBeta</a></p>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>DIY 一台 4 盘位的 NAS</title>
+      <link>https://note.fosky.top/hardware/nas/diy.html</link>
+      <guid>https://note.fosky.top/hardware/nas/diy.html</guid>
+      <source url="https://note.fosky.top/rss.xml">DIY 一台 4 盘位的 NAS</source>
+      <description>注意 本篇笔记尚未完成。 前言 数据越来越多了，特别是我还喜欢囤积各种数据，包括照片视频、书籍电子版等，目前的笔记本仅有 1T，网盘无法满足我即时查阅的需求…… 想着要不买块机械硬盘吧，但是问题又来了，我的桌面东西堆得太多，不好再放一个硬盘盒了。思来想去，就像搞个 NAS，但成品 NAS 又太贵了，就我目前的状况来说，不如 DIY 来得划算。 资料查阅...</description>
+      <pubDate>Sun, 30 Jun 2024 10:34:56 GMT</pubDate>
+      <content:encoded><![CDATA[<div class="hint-container warning">
+<p class="hint-container-title">注意</p>
+<p>本篇笔记尚未完成。</p>
+</div>
+<h2>前言</h2>
+<p>数据越来越多了，特别是我还喜欢囤积各种数据，包括照片视频、书籍电子版等，目前的笔记本仅有 1T，网盘无法满足我即时查阅的需求……</p>
+<p>想着要不买块机械硬盘吧，但是问题又来了，我的桌面东西堆得太多，不好再放一个硬盘盒了。思来想去，就像搞个 NAS，但成品 NAS 又太贵了，就我目前的状况来说，不如 DIY 来得划算。</p>
+<h2>资料查阅</h2>
+<p>最开始搜到的是 <code>蜗牛星际</code> 这款矿渣，但它价格炒得太高了，成色都不咋地，J1900 的性能也有点不够看。据某视频博主说，电源不稳定要换、背板不好要换、风扇不好要换……那干脆买个壳吧，一看二手外壳都能卖到两百多，果断寻找其它外壳。</p>
+<p>最后搜到了 <code>梵隆 4-200</code> 这款 4 盘位的外壳，<code>270</code> 即可拿下，而且颜值和背板都挺不错的。</p>
+<p>而后就是主板，毕竟机箱体积小，只能装 ITX 的。
+一开始我看中的是华擎的 <code>J3455-itx</code>，全新只需 <code>230</code>。
+但后来了解到 <code>J3455</code> 存在设计缺陷，看小黄鱼上在卖这块板的卖家都说被这块板坑了好久，果断放弃。</p>
+<p>再看了眼 <code>J4125</code>，买不起，告辞。</p>
+<p>既然板载的不行，那我主板和 CPU 分开买吧。</p>
+<p>主板搜来搜去在 <code>b81</code>、<code>b85</code>、<code>h97</code> 几款中物色，最后看中了精粤的 <code>h97-plus-itx</code>。</p>
+<p>CPU 搜来搜去选了 <code>I5-4590T</code>，最大功耗 <code>35W</code>。</p>
+<p>电源自然也只能买小 1U 的，一开始想买 <code>180W</code> 的来着。</p>
+<p>内存随便捡个两条 8G DDR3 的，固态捡个 128G M.2 的作为系统盘。CPU 散热风扇随便捡个 Intel 原装的。</p>
+<h2>购买</h2>
+<p>主板小黄鱼 <code>168R</code> 购入，卖家说维修过，坏了个 USB 口，还能接受。</p>
+<p>机箱+电源 小黄鱼 <code>300R</code> 购入，卖家说买来不到一个月，一起出了。到手成色确实很新。</p>
+<p>CPU 小黄鱼 <code>85R</code>，卖家还送了硅脂。</p>
+<h2>清单</h2>
+<table>
+  <thead>
+    <tr><th>物品</th>
+    <th>型号</th>
+    <th>价格</th>
+    <th>渠道</th>
+  </tr></thead>
+  <tbody>
+    <tr>
+      <td>主板</td>
+      <td>精粤H97itx</td>
+      <td>168</td>
+      <td>鱼</td>
+    </tr>
+    <tr>
+      <td>CPU</td>
+      <td>I5 4590T</td>
+      <td>85</td>
+      <td>鱼</td>
+    </tr>
+    <tr>
+      <td>电源</td>
+      <td>蚂蚁悍将小1U 300W</td>
+      <td rowspan="2">300</td>
+      <td rowspan="2">鱼</td>
+    </tr>
+    <tr>
+      <td>机箱</td>
+      <td>梵隆NAS4-200</td>
+    </tr>
+    <tr>
+      <td>CPU散热器</td>
+      <td></td>
+      <td></td>
+      <td>鱼</td>
+    </tr>
+    <tr>
+      <td>内存</td>
+      <td></td>
+      <td></td>
+      <td>鱼</td>
+    </tr>
+    <tr>
+      <td>固态</td>
+      <td></td>
+      <td></td>
+      <td>鱼</td>
+    </tr>
+    <tr>
+      <td colspan="2">总价</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+]]></content:encoded>
+    </item>
     <item>
       <title>Windows Server 上配置 SSH 服务</title>
       <link>https://note.fosky.top/tools/develop/win-ssh.html</link>
@@ -110,17 +219,24 @@
       <pubDate>Sat, 29 Jun 2024 11:10:35 GMT</pubDate>
     </item>
     <item>
-      <title>软件开发</title>
-      <link>https://note.fosky.top/software/</link>
-      <guid>https://note.fosky.top/software/</guid>
-      <source url="https://note.fosky.top/rss.xml">软件开发</source>
-      <pubDate>Sat, 29 Jun 2024 11:10:35 GMT</pubDate>
-    </item>
-    <item>
       <title>工具</title>
       <link>https://note.fosky.top/tools/</link>
       <guid>https://note.fosky.top/tools/</guid>
       <source url="https://note.fosky.top/rss.xml">工具</source>
+      <pubDate>Sat, 29 Jun 2024 11:10:35 GMT</pubDate>
+    </item>
+    <item>
+      <title>建站</title>
+      <link>https://note.fosky.top/website/</link>
+      <guid>https://note.fosky.top/website/</guid>
+      <source url="https://note.fosky.top/rss.xml">建站</source>
+      <pubDate>Sat, 29 Jun 2024 11:10:35 GMT</pubDate>
+    </item>
+    <item>
+      <title>物联网</title>
+      <link>https://note.fosky.top/hardware/iot/</link>
+      <guid>https://note.fosky.top/hardware/iot/</guid>
+      <source url="https://note.fosky.top/rss.xml">物联网</source>
       <pubDate>Sat, 29 Jun 2024 11:10:35 GMT</pubDate>
     </item>
     <item>
@@ -138,24 +254,10 @@
       <pubDate>Sat, 29 Jun 2024 11:10:35 GMT</pubDate>
     </item>
     <item>
-      <title>后端</title>
-      <link>https://note.fosky.top/software/backend/</link>
-      <guid>https://note.fosky.top/software/backend/</guid>
-      <source url="https://note.fosky.top/rss.xml">后端</source>
-      <pubDate>Sat, 29 Jun 2024 11:10:35 GMT</pubDate>
-    </item>
-    <item>
-      <title>数据库</title>
-      <link>https://note.fosky.top/software/database/</link>
-      <guid>https://note.fosky.top/software/database/</guid>
-      <source url="https://note.fosky.top/rss.xml">数据库</source>
-      <pubDate>Sat, 29 Jun 2024 11:10:35 GMT</pubDate>
-    </item>
-    <item>
-      <title>前端</title>
-      <link>https://note.fosky.top/software/frontend/</link>
-      <guid>https://note.fosky.top/software/frontend/</guid>
-      <source url="https://note.fosky.top/rss.xml">前端</source>
+      <title>Magisk 面具</title>
+      <link>https://note.fosky.top/phone/magisk/</link>
+      <guid>https://note.fosky.top/phone/magisk/</guid>
+      <source url="https://note.fosky.top/rss.xml">Magisk 面具</source>
       <pubDate>Sat, 29 Jun 2024 11:10:35 GMT</pubDate>
     </item>
     <item>
@@ -163,6 +265,48 @@
       <link>https://note.fosky.top/tools/develop/</link>
       <guid>https://note.fosky.top/tools/develop/</guid>
       <source url="https://note.fosky.top/rss.xml">开发</source>
+      <pubDate>Sat, 29 Jun 2024 11:10:35 GMT</pubDate>
+    </item>
+    <item>
+      <title>后端</title>
+      <link>https://note.fosky.top/website/backend/</link>
+      <guid>https://note.fosky.top/website/backend/</guid>
+      <source url="https://note.fosky.top/rss.xml">后端</source>
+      <pubDate>Sat, 29 Jun 2024 11:10:35 GMT</pubDate>
+    </item>
+    <item>
+      <title>数据库</title>
+      <link>https://note.fosky.top/website/database/</link>
+      <guid>https://note.fosky.top/website/database/</guid>
+      <source url="https://note.fosky.top/rss.xml">数据库</source>
+      <pubDate>Sat, 29 Jun 2024 11:10:35 GMT</pubDate>
+    </item>
+    <item>
+      <title>域名</title>
+      <link>https://note.fosky.top/website/domain/</link>
+      <guid>https://note.fosky.top/website/domain/</guid>
+      <source url="https://note.fosky.top/rss.xml">域名</source>
+      <pubDate>Sat, 29 Jun 2024 11:10:35 GMT</pubDate>
+    </item>
+    <item>
+      <title>Flarum 论坛程序</title>
+      <link>https://note.fosky.top/website/flarum/</link>
+      <guid>https://note.fosky.top/website/flarum/</guid>
+      <source url="https://note.fosky.top/rss.xml">Flarum 论坛程序</source>
+      <pubDate>Sat, 29 Jun 2024 11:10:35 GMT</pubDate>
+    </item>
+    <item>
+      <title>前端</title>
+      <link>https://note.fosky.top/website/frontend/</link>
+      <guid>https://note.fosky.top/website/frontend/</guid>
+      <source url="https://note.fosky.top/rss.xml">前端</source>
+      <pubDate>Sat, 29 Jun 2024 11:10:35 GMT</pubDate>
+    </item>
+    <item>
+      <title>ThinkPHP 框架</title>
+      <link>https://note.fosky.top/website/thinkphp/</link>
+      <guid>https://note.fosky.top/website/thinkphp/</guid>
+      <source url="https://note.fosky.top/rss.xml">ThinkPHP 框架</source>
       <pubDate>Sat, 29 Jun 2024 11:10:35 GMT</pubDate>
     </item>
   </channel>

@@ -6,6 +6,28 @@
   "description": "傅四霁的笔记",
   "items": [
     {
+      "title": "特殊后缀",
+      "url": "https://note.fosky.top/website/domain/special_tld.html",
+      "id": "https://note.fosky.top/website/domain/special_tld.html",
+      "summary": "我的特殊后缀域名 then.cyou .cyou 是 ShortDot SA 通用顶级域。 heyi.si 寓意 何以思 .si 是斯洛文尼亚的顶级域。 kao.lv 谐音 考虑 .lv 是拉脱维亚的顶级域。 查找比价工具 哪煮米 NameBeta",
+      "content_html": "<h2>我的特殊后缀域名</h2>\n<h3>then.cyou</h3>\n<p><code>.cyou</code> 是 <code>ShortDot SA</code> 通用顶级域。</p>\n<h3>heyi.si</h3>\n<p>寓意 <code>何以思</code></p>\n<p><code>.si</code> 是斯洛文尼亚的顶级域。</p>\n<h3>kao.lv</h3>\n<p>谐音 <code>考虑</code></p>\n<p><code>.lv</code> 是拉脱维亚的顶级域。</p>\n<h2>查找比价工具</h2>\n<p><a href=\"https://www.nazhumi.com/\" target=\"_blank\" rel=\"noopener noreferrer\">哪煮米</a></p>\n<p><a href=\"https://namebeta.com/\" target=\"_blank\" rel=\"noopener noreferrer\">NameBeta</a></p>\n",
+      "date_published": "2024-06-30T10:45:46.000Z",
+      "date_modified": "2024-06-30T11:18:17.000Z",
+      "authors": [],
+      "tags": []
+    },
+    {
+      "title": "DIY 一台 4 盘位的 NAS",
+      "url": "https://note.fosky.top/hardware/nas/diy.html",
+      "id": "https://note.fosky.top/hardware/nas/diy.html",
+      "summary": "注意 本篇笔记尚未完成。 前言 数据越来越多了，特别是我还喜欢囤积各种数据，包括照片视频、书籍电子版等，目前的笔记本仅有 1T，网盘无法满足我即时查阅的需求…… 想着要不买块机械硬盘吧，但是问题又来了，我的桌面东西堆得太多，不好再放一个硬盘盒了。思来想去，就像搞个 NAS，但成品 NAS 又太贵了，就我目前的状况来说，不如 DIY 来得划算。 资料查阅...",
+      "content_html": "<div class=\"hint-container warning\">\n<p class=\"hint-container-title\">注意</p>\n<p>本篇笔记尚未完成。</p>\n</div>\n<h2>前言</h2>\n<p>数据越来越多了，特别是我还喜欢囤积各种数据，包括照片视频、书籍电子版等，目前的笔记本仅有 1T，网盘无法满足我即时查阅的需求……</p>\n<p>想着要不买块机械硬盘吧，但是问题又来了，我的桌面东西堆得太多，不好再放一个硬盘盒了。思来想去，就像搞个 NAS，但成品 NAS 又太贵了，就我目前的状况来说，不如 DIY 来得划算。</p>\n<h2>资料查阅</h2>\n<p>最开始搜到的是 <code>蜗牛星际</code> 这款矿渣，但它价格炒得太高了，成色都不咋地，J1900 的性能也有点不够看。据某视频博主说，电源不稳定要换、背板不好要换、风扇不好要换……那干脆买个壳吧，一看二手外壳都能卖到两百多，果断寻找其它外壳。</p>\n<p>最后搜到了 <code>梵隆 4-200</code> 这款 4 盘位的外壳，<code>270</code> 即可拿下，而且颜值和背板都挺不错的。</p>\n<p>而后就是主板，毕竟机箱体积小，只能装 ITX 的。\n一开始我看中的是华擎的 <code>J3455-itx</code>，全新只需 <code>230</code>。\n但后来了解到 <code>J3455</code> 存在设计缺陷，看小黄鱼上在卖这块板的卖家都说被这块板坑了好久，果断放弃。</p>\n<p>再看了眼 <code>J4125</code>，买不起，告辞。</p>\n<p>既然板载的不行，那我主板和 CPU 分开买吧。</p>\n<p>主板搜来搜去在 <code>b81</code>、<code>b85</code>、<code>h97</code> 几款中物色，最后看中了精粤的 <code>h97-plus-itx</code>。</p>\n<p>CPU 搜来搜去选了 <code>I5-4590T</code>，最大功耗 <code>35W</code>。</p>\n<p>电源自然也只能买小 1U 的，一开始想买 <code>180W</code> 的来着。</p>\n<p>内存随便捡个两条 8G DDR3 的，固态捡个 128G M.2 的作为系统盘。CPU 散热风扇随便捡个 Intel 原装的。</p>\n<h2>购买</h2>\n<p>主板小黄鱼 <code>168R</code> 购入，卖家说维修过，坏了个 USB 口，还能接受。</p>\n<p>机箱+电源 小黄鱼 <code>300R</code> 购入，卖家说买来不到一个月，一起出了。到手成色确实很新。</p>\n<p>CPU 小黄鱼 <code>85R</code>，卖家还送了硅脂。</p>\n<h2>清单</h2>\n<table>\n  <thead>\n    <tr><th>物品</th>\n    <th>型号</th>\n    <th>价格</th>\n    <th>渠道</th>\n  </tr></thead>\n  <tbody>\n    <tr>\n      <td>主板</td>\n      <td>精粤H97itx</td>\n      <td>168</td>\n      <td>鱼</td>\n    </tr>\n    <tr>\n      <td>CPU</td>\n      <td>I5 4590T</td>\n      <td>85</td>\n      <td>鱼</td>\n    </tr>\n    <tr>\n      <td>电源</td>\n      <td>蚂蚁悍将小1U 300W</td>\n      <td rowspan=\"2\">300</td>\n      <td rowspan=\"2\">鱼</td>\n    </tr>\n    <tr>\n      <td>机箱</td>\n      <td>梵隆NAS4-200</td>\n    </tr>\n    <tr>\n      <td>CPU散热器</td>\n      <td></td>\n      <td></td>\n      <td>鱼</td>\n    </tr>\n    <tr>\n      <td>内存</td>\n      <td></td>\n      <td></td>\n      <td>鱼</td>\n    </tr>\n    <tr>\n      <td>固态</td>\n      <td></td>\n      <td></td>\n      <td>鱼</td>\n    </tr>\n    <tr>\n      <td colspan=\"2\">总价</td>\n      <td></td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n",
+      "date_published": "2024-06-30T10:34:56.000Z",
+      "date_modified": "2024-06-30T10:34:56.000Z",
+      "authors": [],
+      "tags": []
+    },
+    {
       "title": "Windows Server 上配置 SSH 服务",
       "url": "https://note.fosky.top/tools/develop/win-ssh.html",
       "id": "https://note.fosky.top/tools/develop/win-ssh.html",
@@ -58,22 +80,32 @@
       "tags": []
     },
     {
-      "title": "软件开发",
-      "url": "https://note.fosky.top/software/",
-      "id": "https://note.fosky.top/software/",
-      "content_html": "",
-      "date_published": "2024-06-29T11:10:35.000Z",
-      "date_modified": "2024-06-29T11:59:29.000Z",
-      "authors": [],
-      "tags": []
-    },
-    {
       "title": "工具",
       "url": "https://note.fosky.top/tools/",
       "id": "https://note.fosky.top/tools/",
       "content_html": "",
       "date_published": "2024-06-29T11:10:35.000Z",
       "date_modified": "2024-06-29T12:02:25.000Z",
+      "authors": [],
+      "tags": []
+    },
+    {
+      "title": "建站",
+      "url": "https://note.fosky.top/website/",
+      "id": "https://note.fosky.top/website/",
+      "content_html": "",
+      "date_published": "2024-06-29T11:10:35.000Z",
+      "date_modified": "2024-06-30T10:37:30.000Z",
+      "authors": [],
+      "tags": []
+    },
+    {
+      "title": "物联网",
+      "url": "https://note.fosky.top/hardware/iot/",
+      "id": "https://note.fosky.top/hardware/iot/",
+      "content_html": "",
+      "date_published": "2024-06-29T11:10:35.000Z",
+      "date_modified": "2024-06-30T04:25:34.000Z",
       "authors": [],
       "tags": []
     },
@@ -98,32 +130,12 @@
       "tags": []
     },
     {
-      "title": "后端",
-      "url": "https://note.fosky.top/software/backend/",
-      "id": "https://note.fosky.top/software/backend/",
+      "title": "Magisk 面具",
+      "url": "https://note.fosky.top/phone/magisk/",
+      "id": "https://note.fosky.top/phone/magisk/",
       "content_html": "",
       "date_published": "2024-06-29T11:10:35.000Z",
-      "date_modified": "2024-06-29T11:32:58.000Z",
-      "authors": [],
-      "tags": []
-    },
-    {
-      "title": "数据库",
-      "url": "https://note.fosky.top/software/database/",
-      "id": "https://note.fosky.top/software/database/",
-      "content_html": "",
-      "date_published": "2024-06-29T11:10:35.000Z",
-      "date_modified": "2024-06-29T11:32:58.000Z",
-      "authors": [],
-      "tags": []
-    },
-    {
-      "title": "前端",
-      "url": "https://note.fosky.top/software/frontend/",
-      "id": "https://note.fosky.top/software/frontend/",
-      "content_html": "",
-      "date_published": "2024-06-29T11:10:35.000Z",
-      "date_modified": "2024-06-29T11:32:58.000Z",
+      "date_modified": "2024-06-30T11:18:17.000Z",
       "authors": [],
       "tags": []
     },
@@ -134,6 +146,66 @@
       "content_html": "",
       "date_published": "2024-06-29T11:10:35.000Z",
       "date_modified": "2024-06-29T12:02:25.000Z",
+      "authors": [],
+      "tags": []
+    },
+    {
+      "title": "后端",
+      "url": "https://note.fosky.top/website/backend/",
+      "id": "https://note.fosky.top/website/backend/",
+      "content_html": "",
+      "date_published": "2024-06-29T11:10:35.000Z",
+      "date_modified": "2024-06-30T10:37:30.000Z",
+      "authors": [],
+      "tags": []
+    },
+    {
+      "title": "数据库",
+      "url": "https://note.fosky.top/website/database/",
+      "id": "https://note.fosky.top/website/database/",
+      "content_html": "",
+      "date_published": "2024-06-29T11:10:35.000Z",
+      "date_modified": "2024-06-30T10:37:30.000Z",
+      "authors": [],
+      "tags": []
+    },
+    {
+      "title": "域名",
+      "url": "https://note.fosky.top/website/domain/",
+      "id": "https://note.fosky.top/website/domain/",
+      "content_html": "",
+      "date_published": "2024-06-29T11:10:35.000Z",
+      "date_modified": "2024-06-30T11:18:17.000Z",
+      "authors": [],
+      "tags": []
+    },
+    {
+      "title": "Flarum 论坛程序",
+      "url": "https://note.fosky.top/website/flarum/",
+      "id": "https://note.fosky.top/website/flarum/",
+      "content_html": "",
+      "date_published": "2024-06-29T11:10:35.000Z",
+      "date_modified": "2024-06-30T11:18:17.000Z",
+      "authors": [],
+      "tags": []
+    },
+    {
+      "title": "前端",
+      "url": "https://note.fosky.top/website/frontend/",
+      "id": "https://note.fosky.top/website/frontend/",
+      "content_html": "",
+      "date_published": "2024-06-29T11:10:35.000Z",
+      "date_modified": "2024-06-30T10:37:30.000Z",
+      "authors": [],
+      "tags": []
+    },
+    {
+      "title": "ThinkPHP 框架",
+      "url": "https://note.fosky.top/website/thinkphp/",
+      "id": "https://note.fosky.top/website/thinkphp/",
+      "content_html": "",
+      "date_published": "2024-06-29T11:10:35.000Z",
+      "date_modified": "2024-06-30T11:18:17.000Z",
       "authors": [],
       "tags": []
     }
