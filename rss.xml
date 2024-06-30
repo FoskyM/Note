@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xsl" href="https://note.fosky.top/rss.xsl"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <atom:link href="https://note.fosky.top/rss.xml" rel="self" type="application/rss+xml"/>
+    <title>傅四霁的笔记</title>
+    <link>https://note.fosky.top/</link>
+    <description>傅四霁的笔记</description>
+    <language>zh-CN</language>
+    <pubDate>Sun, 30 Jun 2024 01:02:14 GMT</pubDate>
+    <lastBuildDate>Sun, 30 Jun 2024 01:02:14 GMT</lastBuildDate>
+    <generator>@vuepress/plugin-feed</generator>
+    <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+    <item>
+      <title>Windows Server 上配置 SSH 服务</title>
+      <link>https://note.fosky.top/tools/develop/win-ssh.html</link>
+      <guid>https://note.fosky.top/tools/develop/win-ssh.html</guid>
+      <source url="https://note.fosky.top/rss.xml">Windows Server 上配置 SSH 服务</source>
+      <description>前言 说起来我也想不到有天我需要在 windows 上配置 ssh 服务。 有此需求一是我从学校信息办老师那里拿了台服务器来玩，但是服务器系统是 Windows Server 2022； 二则是某个课程用到了 Win10 虚拟机，因为懒得一个个装软件了，所以使用 VS Code 的远程开发。 配置 SSH 前面按照搜索引擎结果即可配置完成，但我遇到了一...</description>
+      <pubDate>Sat, 29 Jun 2024 12:25:34 GMT</pubDate>
+      <content:encoded><![CDATA[<h2>前言</h2>
+<p>说起来我也想不到有天我需要在 windows 上配置 ssh 服务。
+有此需求一是我从学校信息办老师那里拿了台服务器来玩，但是服务器系统是 Windows Server 2022；
+二则是某个课程用到了 Win10 虚拟机，因为懒得一个个装软件了，所以使用 VS Code 的远程开发。</p>
+<h2>配置 SSH</h2>
+<p>前面按照搜索引擎结果即可配置完成，但我遇到了一个坑：Windows 的权限问题。</p>
+<p>在配置完成后，我依然无法使用秘钥对认证，查看调试信息提示没有进入 <code>authorized_keys</code> 的权限，但不管我如何按照教程修改 <code>.ssh/authorized_keys</code> 文件夹的权限，依然无法使用。</p>
+<p>在我千方百计的查找后，我找到了这篇文章：<a href="https://blog.51cto.com/u_12302929/3394257" target="_blank" rel="noopener noreferrer">Windows支持 OpenSSH 了！</a></p>
+<p>把 <code>authorized_keys</code> 文件夹删了，使用如下命令在 <code>.ssh</code> 目录下创建 <code>authorized_keys.txt</code> 文件，把公钥粘贴过去。</p>
+<div class="language-shell line-numbers-mode" data-highlighter="shiki" data-ext="shell" data-title="shell" style="--shiki-light:#24292e;--shiki-dark:#abb2bf;--shiki-light-bg:#fff;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes github-light one-dark-pro vp-code"><code><span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#61AFEF">notepad</span><span style="--shiki-light:#032F62;--shiki-dark:#98C379"> authorized_keys</span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><p>然后重命名为 <code>authorized_keys</code></p>
+<div class="language-shell line-numbers-mode" data-highlighter="shiki" data-ext="shell" data-title="shell" style="--shiki-light:#24292e;--shiki-dark:#abb2bf;--shiki-light-bg:#fff;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes github-light one-dark-pro vp-code"><code><span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#61AFEF">mv</span><span style="--shiki-light:#032F62;--shiki-dark:#98C379"> .</span><span style="--shiki-light:#005CC5;--shiki-dark:#56B6C2">\a</span><span style="--shiki-light:#032F62;--shiki-dark:#98C379">uthorized_keys.txt</span><span style="--shiki-light:#032F62;--shiki-dark:#98C379"> .</span><span style="--shiki-light:#005CC5;--shiki-dark:#56B6C2">\a</span><span style="--shiki-light:#032F62;--shiki-dark:#98C379">uthorized_keys</span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><p>再次尝试可以连接了。</p>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>Git 的使用</title>
+      <link>https://note.fosky.top/tools/develop/git.html</link>
+      <guid>https://note.fosky.top/tools/develop/git.html</guid>
+      <source url="https://note.fosky.top/rss.xml">Git 的使用</source>
+      <description>修改默认分支 修改提交邮箱 批量修改历史提交记录中的邮箱 然后 git push -f 强制推送 提交加签 GPG 操作 设置提交公钥 Github 设置中 SSH and GPG keys 点击 New GPG Key， 把刚刚导出的公钥输入进去即可。 这里可以直接看到 Key ID 而后执行以下命令 为历史提交加签 先拉取项目到本地 然后在项目目录...</description>
+      <pubDate>Sat, 29 Jun 2024 12:21:51 GMT</pubDate>
+      <content:encoded><![CDATA[<h2>修改默认分支</h2>
+<div class="language-shell line-numbers-mode" data-highlighter="shiki" data-ext="shell" data-title="shell" style="--shiki-light:#24292e;--shiki-dark:#abb2bf;--shiki-light-bg:#fff;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes github-light one-dark-pro vp-code"><code><span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#61AFEF">git</span><span style="--shiki-light:#032F62;--shiki-dark:#98C379"> config</span><span style="--shiki-light:#005CC5;--shiki-dark:#D19A66"> --global</span><span style="--shiki-light:#032F62;--shiki-dark:#98C379"> init.defaultBranch</span><span style="--shiki-light:#032F62;--shiki-dark:#98C379"> main</span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><h2>修改提交邮箱</h2>
+<div class="language-shell line-numbers-mode" data-highlighter="shiki" data-ext="shell" data-title="shell" style="--shiki-light:#24292e;--shiki-dark:#abb2bf;--shiki-light-bg:#fff;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes github-light one-dark-pro vp-code"><code><span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#61AFEF">git</span><span style="--shiki-light:#032F62;--shiki-dark:#98C379"> config</span><span style="--shiki-light:#005CC5;--shiki-dark:#D19A66"> --global</span><span style="--shiki-light:#032F62;--shiki-dark:#98C379"> user.email</span><span style="--shiki-light:#032F62;--shiki-dark:#98C379"> "&lt;EMAIL&gt;"</span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><h2>批量修改历史提交记录中的邮箱</h2>
+<div class="language-shell line-numbers-mode" data-highlighter="shiki" data-ext="shell" data-title="shell" style="--shiki-light:#24292e;--shiki-dark:#abb2bf;--shiki-light-bg:#fff;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes github-light one-dark-pro vp-code"><code><span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#61AFEF">git</span><span style="--shiki-light:#032F62;--shiki-dark:#98C379"> filter-branch</span><span style="--shiki-light:#005CC5;--shiki-dark:#D19A66"> -f</span><span style="--shiki-light:#005CC5;--shiki-dark:#D19A66"> --env-filter</span><span style="--shiki-light:#032F62;--shiki-dark:#98C379"> '</span></span>
+<span class="line"><span style="--shiki-light:#032F62;--shiki-dark:#98C379">  OLD_EMAIL="旧邮箱"</span></span>
+<span class="line"><span style="--shiki-light:#032F62;--shiki-dark:#98C379">  CORRECT_NAME="用户名"</span></span>
+<span class="line"><span style="--shiki-light:#032F62;--shiki-dark:#98C379">  CORRECT_EMAIL="新邮箱"</span></span>
+<span class="line"><span style="--shiki-light:#032F62;--shiki-dark:#98C379">  if [ "$GIT_COMMITTER_EMAIL" = "$OLD_EMAIL" ]</span></span>
+<span class="line"><span style="--shiki-light:#032F62;--shiki-dark:#98C379">  then</span></span>
+<span class="line"><span style="--shiki-light:#032F62;--shiki-dark:#98C379">    export GIT_COMMITTER_NAME="$CORRECT_NAME"</span></span>
+<span class="line"><span style="--shiki-light:#032F62;--shiki-dark:#98C379">    export GIT_COMMITTER_EMAIL="$CORRECT_EMAIL"</span></span>
+<span class="line"><span style="--shiki-light:#032F62;--shiki-dark:#98C379">  fi</span></span>
+<span class="line"><span style="--shiki-light:#032F62;--shiki-dark:#98C379">  if [ "$GIT_AUTHOR_EMAIL" = "$OLD_EMAIL" ]</span></span>
+<span class="line"><span style="--shiki-light:#032F62;--shiki-dark:#98C379">  then</span></span>
+<span class="line"><span style="--shiki-light:#032F62;--shiki-dark:#98C379">    export GIT_AUTHOR_NAME="$CORRECT_NAME"</span></span>
+<span class="line"><span style="--shiki-light:#032F62;--shiki-dark:#98C379">    export GIT_AUTHOR_EMAIL="$CORRECT_EMAIL"</span></span>
+<span class="line"><span style="--shiki-light:#032F62;--shiki-dark:#98C379">  fi</span></span>
+<span class="line"><span style="--shiki-light:#032F62;--shiki-dark:#98C379">'</span><span style="--shiki-light:#005CC5;--shiki-dark:#D19A66"> --tag-name-filter</span><span style="--shiki-light:#032F62;--shiki-dark:#98C379"> cat</span><span style="--shiki-light:#005CC5;--shiki-dark:#D19A66"> --</span><span style="--shiki-light:#005CC5;--shiki-dark:#D19A66"> --branches</span><span style="--shiki-light:#005CC5;--shiki-dark:#D19A66"> --tags</span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>然后 <code>git push -f</code> 强制推送</p>
+<h2>提交加签</h2>
+<h3>GPG 操作</h3>
+<div class="language-shell line-numbers-mode" data-highlighter="shiki" data-ext="shell" data-title="shell" style="--shiki-light:#24292e;--shiki-dark:#abb2bf;--shiki-light-bg:#fff;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes github-light one-dark-pro vp-code"><code><span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#61AFEF">gpg</span><span style="--shiki-light:#005CC5;--shiki-dark:#D19A66"> --gen-key</span><span style="--shiki-light:#6A737D;--shiki-dark:#7F848E;--shiki-light-font-style:inherit;--shiki-dark-font-style:italic"> # 生成秘钥对</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#61AFEF">gpg</span><span style="--shiki-light:#005CC5;--shiki-dark:#D19A66"> --list-key</span><span style="--shiki-light:#6A737D;--shiki-dark:#7F848E;--shiki-light-font-style:inherit;--shiki-dark-font-style:italic"> # 列出公钥</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#61AFEF">gpg</span><span style="--shiki-light:#005CC5;--shiki-dark:#D19A66"> --list-secret-keys</span><span style="--shiki-light:#6A737D;--shiki-dark:#7F848E;--shiki-light-font-style:inherit;--shiki-dark-font-style:italic"> # 列出私钥</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#61AFEF">gpg</span><span style="--shiki-light:#005CC5;--shiki-dark:#D19A66"> -a</span><span style="--shiki-light:#005CC5;--shiki-dark:#D19A66"> --export</span><span style="--shiki-light:#6A737D;--shiki-dark:#7F848E;--shiki-light-font-style:inherit;--shiki-dark-font-style:italic"> # 导出公钥</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#61AFEF">gpg</span><span style="--shiki-light:#005CC5;--shiki-dark:#D19A66"> -a</span><span style="--shiki-light:#005CC5;--shiki-dark:#D19A66"> --export-secret-keys</span><span style="--shiki-light:#6A737D;--shiki-dark:#7F848E;--shiki-light-font-style:inherit;--shiki-dark-font-style:italic"> # 导出私钥</span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3>设置提交公钥</h3>
+<p>Github 设置中 <code>SSH and GPG keys</code> 点击 <code>New GPG Key</code>，
+把刚刚导出的公钥输入进去即可。
+这里可以直接看到 <code>Key ID</code></p>
+<p>而后执行以下命令</p>
+<div class="language-shell line-numbers-mode" data-highlighter="shiki" data-ext="shell" data-title="shell" style="--shiki-light:#24292e;--shiki-dark:#abb2bf;--shiki-light-bg:#fff;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes github-light one-dark-pro vp-code"><code><span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#61AFEF">git</span><span style="--shiki-light:#032F62;--shiki-dark:#98C379"> config</span><span style="--shiki-light:#005CC5;--shiki-dark:#D19A66"> --global</span><span style="--shiki-light:#032F62;--shiki-dark:#98C379"> user.signingkey</span><span style="--shiki-light:#032F62;--shiki-dark:#98C379"> "&lt;Key ID&gt;"</span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><div class="language-shell line-numbers-mode" data-highlighter="shiki" data-ext="shell" data-title="shell" style="--shiki-light:#24292e;--shiki-dark:#abb2bf;--shiki-light-bg:#fff;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes github-light one-dark-pro vp-code"><code><span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#61AFEF">git</span><span style="--shiki-light:#032F62;--shiki-dark:#98C379"> config</span><span style="--shiki-light:#005CC5;--shiki-dark:#D19A66"> --global</span><span style="--shiki-light:#032F62;--shiki-dark:#98C379"> commit.gpgsign</span><span style="--shiki-light:#005CC5;--shiki-dark:#D19A66"> true</span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><div class="language-shell line-numbers-mode" data-highlighter="shiki" data-ext="shell" data-title="shell" style="--shiki-light:#24292e;--shiki-dark:#abb2bf;--shiki-light-bg:#fff;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes github-light one-dark-pro vp-code"><code><span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#61AFEF">git</span><span style="--shiki-light:#032F62;--shiki-dark:#98C379"> config</span><span style="--shiki-light:#005CC5;--shiki-dark:#D19A66"> --global</span><span style="--shiki-light:#032F62;--shiki-dark:#98C379"> gpg.program</span><span style="--shiki-light:#032F62;--shiki-dark:#98C379"> "[git 安装目录]</span><span style="--shiki-light:#005CC5;--shiki-dark:#56B6C2">\\</span><span style="--shiki-light:#032F62;--shiki-dark:#98C379">usr</span><span style="--shiki-light:#005CC5;--shiki-dark:#56B6C2">\\</span><span style="--shiki-light:#032F62;--shiki-dark:#98C379">bin</span><span style="--shiki-light:#005CC5;--shiki-dark:#56B6C2">\\</span><span style="--shiki-light:#032F62;--shiki-dark:#98C379">gpg.exe"</span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><h3>为历史提交加签</h3>
+<p>先拉取项目到本地
+然后在项目目录运行 <code>git rebase -i --root</code></p>
+<p>这时会跳出编辑器，把需要修改的 commit 记录前面的 <code>pick</code> 改为 <code>edit</code>，然后关闭文件。</p>
+<p>而后继续在命令行中运行 <code>git commit --amend -S</code> 即可加签，
+<code>amend</code> 表示修正，<code>S</code> 表示签名。</p>
+<p><code>git commit --amend</code> 还可以用来修改 commit 的提交者信息，例如</p>
+<div class="language-shell line-numbers-mode" data-highlighter="shiki" data-ext="shell" data-title="shell" style="--shiki-light:#24292e;--shiki-dark:#abb2bf;--shiki-light-bg:#fff;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes github-light one-dark-pro vp-code"><code><span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#61AFEF">git</span><span style="--shiki-light:#032F62;--shiki-dark:#98C379"> commit</span><span style="--shiki-light:#005CC5;--shiki-dark:#D19A66"> --amend</span><span style="--shiki-light:#005CC5;--shiki-dark:#D19A66"> --author=</span><span style="--shiki-light:#032F62;--shiki-dark:#98C379">"FoskyM &lt;i@fosky.top&gt;"</span><span style="--shiki-light:#005CC5;--shiki-dark:#D19A66"> -S</span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><p>执行命令后又会跳出编辑器，如果不需要修改 commit message 则直接关闭即可。</p>
+<p>运行 <code>git rebase --continue</code> 继续修改，重复操作直到提示 <code>No rebase in progress</code></p>
+<p>运行 <code>git push -f</code> 强制推送</p>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>目录</title>
+      <link>https://note.fosky.top/guide.html</link>
+      <guid>https://note.fosky.top/guide.html</guid>
+      <source url="https://note.fosky.top/rss.xml">目录</source>
+      <pubDate>Sat, 29 Jun 2024 11:10:35 GMT</pubDate>
+    </item>
+    <item>
+      <title>硬件</title>
+      <link>https://note.fosky.top/hardware/</link>
+      <guid>https://note.fosky.top/hardware/</guid>
+      <source url="https://note.fosky.top/rss.xml">硬件</source>
+      <pubDate>Sat, 29 Jun 2024 11:10:35 GMT</pubDate>
+    </item>
+    <item>
+      <title>搞机</title>
+      <link>https://note.fosky.top/phone/</link>
+      <guid>https://note.fosky.top/phone/</guid>
+      <source url="https://note.fosky.top/rss.xml">搞机</source>
+      <pubDate>Sat, 29 Jun 2024 11:10:35 GMT</pubDate>
+    </item>
+    <item>
+      <title>软件开发</title>
+      <link>https://note.fosky.top/software/</link>
+      <guid>https://note.fosky.top/software/</guid>
+      <source url="https://note.fosky.top/rss.xml">软件开发</source>
+      <pubDate>Sat, 29 Jun 2024 11:10:35 GMT</pubDate>
+    </item>
+    <item>
+      <title>工具</title>
+      <link>https://note.fosky.top/tools/</link>
+      <guid>https://note.fosky.top/tools/</guid>
+      <source url="https://note.fosky.top/rss.xml">工具</source>
+      <pubDate>Sat, 29 Jun 2024 11:10:35 GMT</pubDate>
+    </item>
+    <item>
+      <title>NAS</title>
+      <link>https://note.fosky.top/hardware/nas/</link>
+      <guid>https://note.fosky.top/hardware/nas/</guid>
+      <source url="https://note.fosky.top/rss.xml">NAS</source>
+      <pubDate>Sat, 29 Jun 2024 11:10:35 GMT</pubDate>
+    </item>
+    <item>
+      <title>单片机</title>
+      <link>https://note.fosky.top/hardware/singlechip/</link>
+      <guid>https://note.fosky.top/hardware/singlechip/</guid>
+      <source url="https://note.fosky.top/rss.xml">单片机</source>
+      <pubDate>Sat, 29 Jun 2024 11:10:35 GMT</pubDate>
+    </item>
+    <item>
+      <title>后端</title>
+      <link>https://note.fosky.top/software/backend/</link>
+      <guid>https://note.fosky.top/software/backend/</guid>
+      <source url="https://note.fosky.top/rss.xml">后端</source>
+      <pubDate>Sat, 29 Jun 2024 11:10:35 GMT</pubDate>
+    </item>
+    <item>
+      <title>数据库</title>
+      <link>https://note.fosky.top/software/database/</link>
+      <guid>https://note.fosky.top/software/database/</guid>
+      <source url="https://note.fosky.top/rss.xml">数据库</source>
+      <pubDate>Sat, 29 Jun 2024 11:10:35 GMT</pubDate>
+    </item>
+    <item>
+      <title>前端</title>
+      <link>https://note.fosky.top/software/frontend/</link>
+      <guid>https://note.fosky.top/software/frontend/</guid>
+      <source url="https://note.fosky.top/rss.xml">前端</source>
+      <pubDate>Sat, 29 Jun 2024 11:10:35 GMT</pubDate>
+    </item>
+    <item>
+      <title>开发</title>
+      <link>https://note.fosky.top/tools/develop/</link>
+      <guid>https://note.fosky.top/tools/develop/</guid>
+      <source url="https://note.fosky.top/rss.xml">开发</source>
+      <pubDate>Sat, 29 Jun 2024 11:10:35 GMT</pubDate>
+    </item>
+  </channel>
+</rss>
